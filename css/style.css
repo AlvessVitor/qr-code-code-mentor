@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,700;1,100;1,200&family=Outfit:wght@400;700&family=Red+Hat+Display:wght@500;700;900&family=Roboto:wght@500&family=Source+Code+Pro:wght@200&display=swap');
+
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Outfit', sans-serif;
+font-family: 'Red Hat Display', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Source Code Pro', monospace; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+h2 {
+    font-weight: 700;
+    color: hsl(218, 44%, 22%);
+    font-size: 27px;
+    margin-bottom: 15px;
+    text-align: center;
+
+}
+
+p {
+    font-weight: 400;
+    color: hsl(220, 15%, 55%);
+    text-align: center;
+}
+
+body {
+    background-color: hsl(212, 45%, 89%);
+    position: relative;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: hsl(0, 0%, 100%);
+    max-width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 20px;
+}
+
+.texto-principal {
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+/* Fazendo responsividade para dispositivo móveis */
+
+@media only screen and (max-width: 540px) {
+
+    body {
+        font-size: 13px;
+    }
+
+    .container{
+        min-width: 85%;
+    }
+
+    h2{
+        font-size: 20px;
+    }
+
+    p{
+        font-size: 16px;
+    }
+
+}
